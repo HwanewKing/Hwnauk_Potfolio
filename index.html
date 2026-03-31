@@ -1201,7 +1201,8 @@
 <script>
   /* Demo Video */
   function openVideo(title, src) {
-    document.getElementById('video-title').textContent = title + ' — 데모 영상';
+    const isImage = src && /\.(png|jpg|jpeg|gif|webp)$/i.test(src);
+    document.getElementById('video-title').textContent = title + (isImage ? ' — 결과이미지' : ' — 데모영상');
     const player = document.getElementById('video-player');
     const ytMatch = src.match(/(?:youtu\.be\/|youtube\.com\/watch\?v=)([^&\s]+)/);
     if (ytMatch) {
