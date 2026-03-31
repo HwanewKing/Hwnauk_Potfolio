@@ -500,15 +500,23 @@
       .hero-sub { font-size: 14px; margin-bottom: 36px; }
       .hero-cta { padding: 13px 28px; font-size: 14px; }
 
-      /* Journey – orbital visible on mobile (scaled down) */
+      /* Journey – orbital repositioned for mobile */
       #journey { padding: 70px 20px; min-height: auto; }
       .section-sub { font-size: 14px; margin-bottom: 36px; }
       .orbital-wrap {
         display: block;
-        transform: scale(0.58);
-        transform-origin: center top;
-        height: 325px;
+        width: 300px;
+        height: 300px;
+        transform: none;
       }
+      .orbit-center { width: 90px; height: 90px; }
+      .orbit-center .oc-small { font-size: 8px; }
+      .orbit-center .oc-big { font-size: 16px; }
+      .sat-node { width: 55px; height: 55px; }
+      /* 반지름 110px, 중심 (150,150), 세 노드 120° 등간격 */
+      .sat-ai-top { top:  40px; left: 150px; }
+      .sat-dev    { top: 205px; left:  55px; }
+      .sat-ai-br  { top: 205px; left: 245px; }
       .orbital-mobile { display: none; }
       .orbit-hint { display: flex; font-size: 11px; margin-top: 0; }
 
@@ -545,10 +553,14 @@
       .nav-links { gap: 14px; }
       .nav-links a { font-size: 11px; letter-spacing: 0; }
       .hero-title { font-size: 22px; }
-      .orbital-wrap {
-        transform: scale(0.5);
-        height: 280px;
-      }
+      .orbital-wrap { width: 260px; height: 260px; }
+      .orbit-center { width: 78px; height: 78px; }
+      .orbit-center .oc-big { font-size: 14px; }
+      .sat-node { width: 48px; height: 48px; }
+      /* 반지름 95px, 중심 (130,130) */
+      .sat-ai-top { top:  35px; left: 130px; }
+      .sat-dev    { top: 178px; left:  48px; }
+      .sat-ai-br  { top: 178px; left: 212px; }
     }
   </style>
 </head>
