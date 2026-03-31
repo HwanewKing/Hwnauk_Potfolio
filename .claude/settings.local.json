@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ffprobe -v quiet -print_format json -show_format -show_streams \"C:\\\\Users\\\\c\\\\Desktop\\\\Hwnauk_Potfolio\\\\ball_video.mp4\")",
+      "Bash(powershell -Command \"Get-Item ''C:\\\\Users\\\\c\\\\Desktop\\\\Hwnauk_Potfolio\\\\ball_video.mp4'' | Select-Object Name, Length, Extension\")",
+      "Bash(ls -la \"C:\\\\Users\\\\c\\\\Desktop\\\\Hwnauk_Potfolio\"/*.mp4)"
+    ]
+  }
+}
