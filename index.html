@@ -500,12 +500,17 @@
       .hero-sub { font-size: 14px; margin-bottom: 36px; }
       .hero-cta { padding: 13px 28px; font-size: 14px; }
 
-      /* Journey – swap orbital → cards */
+      /* Journey – orbital visible on mobile (scaled down) */
       #journey { padding: 70px 20px; min-height: auto; }
       .section-sub { font-size: 14px; margin-bottom: 36px; }
-      .orbital-wrap { display: none; }
-      .orbital-mobile { display: grid; }
-      .orbit-hint { display: none; }
+      .orbital-wrap {
+        display: block;
+        transform: scale(0.58);
+        transform-origin: center top;
+        height: 325px;
+      }
+      .orbital-mobile { display: none; }
+      .orbit-hint { display: flex; font-size: 11px; margin-top: 0; }
 
       /* Contact */
       #contact { padding: 70px 20px; }
@@ -540,8 +545,10 @@
       .nav-links { gap: 14px; }
       .nav-links a { font-size: 11px; letter-spacing: 0; }
       .hero-title { font-size: 22px; }
-      .orb-card-title { font-size: 14px; }
-      .orbital-mobile { gap: 10px; }
+      .orbital-wrap {
+        transform: scale(0.5);
+        height: 280px;
+      }
     }
   </style>
 </head>
@@ -549,7 +556,7 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">JHU</div>
+  <div class="nav-logo">JHW</div>
   <ul class="nav-links">
     <li><a href="#journey">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
